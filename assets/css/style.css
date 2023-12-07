@@ -78,10 +78,11 @@ header {
     padding: 20px;
     background: var(--alt-color);
     box-shadow: -2px 0 0 4px hsl(0 , 4%, 7%);
-    transition: 0.3s;
+    transition: 0.7s ease-in;
 }
 .cart.active{
     right: 0;
+    transition: 0.7s ease-out;
 }
 .cart-title{
     text-align: center;
