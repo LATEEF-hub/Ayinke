@@ -76,6 +76,11 @@ function updatetotal() {
         var price = parseFloat(priceElement.innerText.replace("$", ""));
         var quantity = quantityEl.value;
         total = total + price * quantity;
+        //    If price consist of cents 
+        total = Math.round(total *100)/  100;  
+         
+
+
 
 
         document.getElementsByClassName('total-price')[0].innerText = "$" + total;
