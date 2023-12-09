@@ -212,6 +212,24 @@ header {
 .price {
     font-weight: 500;
 }
+.like-product{
+    position: absolute;
+    bottom: -4.2%;
+    right: 15%;
+    background: transparent;
+    color: var(--text-color);
+    padding: 10px;
+    cursor: pointer;
+    /* width: 10%; */
+    /* border: 1px solid #000; */
+    /* border-radius: 1.5rem; */
+    font-size: 2rem;
+    /* height: 5vh; */
+}
+.like-product:hover{
+    
+    color: red;
+}
 
 .add-cart {
     position: absolute;
