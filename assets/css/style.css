@@ -146,7 +146,7 @@ header {
 }
 .total-price{
     margin-left: 0.5rem;
-    margin-top:0.2rem;
+    margin-top:0.3rem;
 }
 .btn-buy{
     display: flex;
@@ -214,7 +214,7 @@ header {
 }
 .like-product{
     position: absolute;
-    bottom: -4.2%;
+    bottom: -2%;
     right: 15%;
     background: transparent;
     color: var(--text-color);
@@ -223,7 +223,7 @@ header {
     /* width: 10%; */
     /* border: 1px solid #000; */
     /* border-radius: 1.5rem; */
-    font-size: 2rem;
+    font-size: 1.7rem;
     /* height: 5vh; */
 }
 .like-product:hover{
