@@ -243,3 +243,15 @@ header {
 .add-cart:hover{
     background: hsl(249, 32%, 17%);
 }
+
+/* B point */
+@media (max-wodth: 1080px) {
+    .nav{
+        padding: 15px;
+    }
+    section{
+        padding: 3rem 0 2rem;
+        width: 90%;
+    }
+    
+}

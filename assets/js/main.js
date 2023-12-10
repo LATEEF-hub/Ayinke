@@ -1,5 +1,3 @@
-// Cart
-
 
 alert("working!");
 let cart = document.querySelector('.cart');
@@ -54,12 +52,13 @@ function ready() {
         .addEventListener('click', buyButtonClicked);
 }
 
-function buyButtonClicked(){
+function buyButtonClicked() {
     alert("Your order is placed");
     var cartContent = document.getElementsByClassName('cart-content')[0]
     while (cartContent.hasChildNodes()) {
         cartContent.removeChild(cartContent.firstChild);
     }
+    updatetotal();
 }
 function addFavorite() {
     /**
@@ -150,11 +149,11 @@ function updatetotal() {
         var price = parseFloat(priceElement.innerText.replace("$", ""));
         var quantity = quantityEl.value;
         total = total + price * quantity;
-        //    If price consist of cents 
-        total = Math.round(total * 100) / 100;
-
-
-        document.getElementsByClassName('total-price')[0].innerText = "$" + total;
 
     }
+    //    If price consist of cents 
+    total = Math.round(total * 100) / 100;
+    document.getElementsByClassName('total-price')[0].innerText = "$" + total;
+
+
 }
